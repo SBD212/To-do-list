@@ -9,8 +9,6 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static('public'))
 
-const workItems = []
-
 mongoose.connect('mongodb+srv://jdawan:4kHgDcFl8gpYv2Vt@cluster0.hz6kd.mongodb.net/To-Do-List?retryWrites=true&w=majority')
 
 const itemSchema = new mongoose.Schema({
